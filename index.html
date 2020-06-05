@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula 4 - DOM JavaScript + HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Victor Gazzinelli">
+        <meta name="description" content="Aula 4 PWE">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>Jogo da Velhinha</h3>
+        <br/>
+        <div class="row">
+            <div id="a00" y="0" x="0" class="square" onclick="fillDivOnClick(this)"></div>
+            <div id="a01" y="0" x="1" class="square" onclick="fillDivOnClick(this)"></div>
+            <div id="a02" y="0" x="2" class="square" onclick="fillDivOnClick(this)"></div>
+        </div>
+        <div class="row">
+            <div id="a10" y="1" x="0" class="square" onclick="fillDivOnClick(this)"></div>
+            <div id="a11" y="1" x="1" class="square" onclick="fillDivOnClick(this)"></div>
+            <div id="a12" y="1" x="2" class="square" onclick="fillDivOnClick(this)"></div>
+        </div>
+        <div class="row">
+            <div id="a20" y="2" x="0" class="square" onclick="fillDivOnClick(this)"></div>
+            <div id="a21" y="2" x="1" class="square" onclick="fillDivOnClick(this)"></div>
+            <div id="a22" y="2" x="2" class="square" onclick="fillDivOnClick(this)"></div>
+        </div>
+        <h2 id="msg-win-1" hidden>O vencedor é o Jogador 1!!!</h2>
+        <h2 id="msg-win-2" hidden>O vencedor é o Jogador 2!!!</h2>
+        <h2 id="msg-tie" hidden>Empate !!!</h2>
+        <button id="restart" onclick="location.reload()">
+            Reiniciar a partida
+        </button>
+        <script src="script.js"></script>
+    </body>
+</html>
